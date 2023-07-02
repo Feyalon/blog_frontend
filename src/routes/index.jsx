@@ -4,16 +4,14 @@ import MainLayout from '../layout/Index';
 import MainPage from '../pages/mainPage/main';
 import AboutPage from '../pages/aboutPage/about';
 import Loader from '../components/loader/Index';
-const SinglePage = React.lazy(() => import('../pages/singlePostPage/singlePost'))
+import SinglePostPage from '../pages/singlePostPage/singlePost';
 const MainRouter = () => {
   return (
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<MainLayout />}>
             <Route path='/post/:userId' element={
-              <React.Suspense fallback={<Loader />}>
-                <SinglePage />
-              </React.Suspense>
+                <SinglePostPage />
             } />
             <Route index element={<MainPage />}/>
             <Route path='about' element={<AboutPage/>} />
