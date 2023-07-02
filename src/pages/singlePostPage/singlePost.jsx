@@ -10,7 +10,7 @@ export default function SinglePostPage() {
     async function fetcData() {
       try {
         const response = await axios.get(
-          `http://blogfeyalonserve.onrender.com/api/post/${userId}`
+          `https://blogfeyalonserve.onrender.com/api/post/${userId}`
         );
 
         setData(response.data);
