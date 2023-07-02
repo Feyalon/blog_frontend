@@ -12,7 +12,7 @@ export default function CardComponentAbout({ props }) {
       ></div>
 
       <div className="blog_post_title">
-        <a href={'/' + props._id}>
+        <a href={'/post/' + props._id}>
           <h1>{props.title}</h1>
         </a>
 
