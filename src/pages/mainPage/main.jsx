@@ -14,7 +14,7 @@ export default function MainPage() {
     async function fetchdata() {
       try {
         
-        const response = await axios.get('https://blogfeyalonserve.onrender.com/api/posts/' + tag);
+        const response = await axios.get('https://feyalonblserver.onrender.com/api/posts/' + tag);
         setData(response.data);
       } catch (error) {
         console.error(error);
