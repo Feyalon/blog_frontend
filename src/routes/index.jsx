@@ -10,7 +10,7 @@ const MainRouter = () => {
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<MainLayout />}>
-            <Route path=':userId' element={
+            <Route path='/post/:userId' element={
               <React.Suspense fallback={<Loader />}>
                 <SinglePage />
               </React.Suspense>
