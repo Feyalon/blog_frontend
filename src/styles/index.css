@@ -1,0 +1,131 @@
+@import url('./card/card.css');
+@import url('./footer/footer.css');
+@import url('./header/header.css');
+@import url('./adaptive/adaptive.css');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap');
+@import url('./loader/loader.css');
+* {
+  --bg: #e3e4e8;
+	--fg: #17181c;
+	--dur: 8s;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Oxygen', sans-serif;
+}
+.MainRoute{
+  display: flex;
+  gap: 150px;
+  
+  align-items: center;
+}
+a{
+  color: white;
+}
+body {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1928' height='4000' preserveAspectRatio='none' viewBox='0 0 1928 4000'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1044%26quot%3b)' fill='none'%3e%3crect width='1928' height='4000' x='0' y='0' fill='rgba(1%2c 40%2c 80%2c 1)'%3e%3c/rect%3e%3cpath d='M1547.2216477613863 1467.7926483339052L1745.443414908183 1687.940223638696 1965.5909902129738 1489.7184564918991 1767.369223066177 1269.5708811871084z' fill='rgba(107%2c 163%2c 223%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M300.98926832003787 2879.6662933385924L573.1082990306622 3332.548412907395 1025.9904185994644 3060.4293821967703 753.87138788884 2607.547262627968z' fill='rgba(107%2c 163%2c 223%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1429.7244141761703 1439.8046495872527L1312.4259955999748 1056.1388100432553 928.7601560559774 1173.4372286194507 1046.0585746321728 1557.1030681634481z' fill='rgba(107%2c 163%2c 223%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1788.3935507465508 2526.7700352185525L1495.7616735953623 2469.8881604743538 1438.8797988511633 2762.520037625542 1731.5116760023518 2819.4019123697412z' fill='rgba(107%2c 163%2c 223%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1924.4068651521638 3630.9889724371083L1666.0440894043572 3414.1968625971854 1449.2519795644346 3672.559638344992 1707.614755312241 3889.351748184915z' fill='rgba(107%2c 163%2c 223%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1380.1497906023924 1760.3696795805104L1825.1935127780139 2108.0759428833726 2172.899776080876 1663.032220707751 1727.8560539052546 1315.3259574048889z' fill='rgba(107%2c 163%2c 223%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M102.63706339579215 1190.2775340153826L364.65072104478725 1347.711222544033 522.0844095734378 1085.6975648950379 260.0707519244427 928.2638763663874z' fill='rgba(107%2c 163%2c 223%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M712.5397055205705 1090.5333273153085L1045.3782205926295 1532.2249551775112 1487.069848454832 1199.3864401054523 1154.2313333827733 757.6948122432495z' fill='rgba(107%2c 163%2c 223%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M928.7227523732228 3153.323761131867L586.6990615859568 3177.2403874377733 610.6156878918633 3519.264078225039 952.6393786791293 3495.3474519191327z' fill='rgba(107%2c 163%2c 223%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1292.7764084474538 1075.8855584457128L945.8326190155517 899.1088681861225 769.0559287559614 1246.0526576180246 1115.9997181878634 1422.829347877615z' fill='rgba(107%2c 163%2c 223%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1636.5536203242668 3601.49786140709L1656.4803074532183 3030.87220169302 1085.8546477391483 3010.9455145640686 1065.9279606101968 3581.5711742781386z' fill='rgba(107%2c 163%2c 223%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1918.896709845865 2494.882995711632L1581.4207610616413 2844.349570852929 1930.8873362029385 3181.825519637153 2268.3632849871624 2832.3589444958557z' fill='rgba(107%2c 163%2c 223%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M2115.3027216258424 869.857095483719L1610.2234920362732 695.9443698369599 1436.3107663895141 1201.0235994265292 1941.3899959790833 1374.9363250732883z' fill='rgba(107%2c 163%2c 223%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M766.3020258755902-5.892514077820238L965.0235801615231 420.267234342778 1391.1833285821212 221.54568005684513 1192.4617742961884-204.61406836375312z' fill='rgba(107%2c 163%2c 223%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1409.2688780241253 3646.68123674272L1058.7447354598135 3460.304244116223 872.3677428333162 3810.8283866805345 1222.8918853976281 3997.2053793070318z' fill='rgba(107%2c 163%2c 223%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1590.3475516250537 2251.614710766346L1257.8568037988116 2520.860409541104 1527.10250257357 2853.3511573673463 1859.593250399812 2584.105458592588z' fill='rgba(107%2c 163%2c 223%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M960.8525363355017 199.68733538369275L1064.1705553652523 499.7446501098117 1364.2278700913714 396.42663108006093 1260.9098510616207 96.369316353942z' fill='rgba(107%2c 163%2c 223%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M171.61218462070246 2787.598245026495L251.47445912133992 3133.519760291464 597.395974386309 3053.6574857908267 517.5336998856717 2707.7359705258577z' fill='rgba(107%2c 163%2c 223%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M-11.524542641142318 332.6511669565799L-190.12015854861008 578.4669437670325 55.69561826184247 757.0625596745002 234.29123416931023 511.24678286404765z' fill='rgba(107%2c 163%2c 223%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M295.0331676184918 3417.239975200349L-35.6850554954043 3531.1153916365556 78.19036094080258 3861.833614750452 408.9085840546987 3747.9581983142452z' fill='rgba(107%2c 163%2c 223%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1044'%3e%3crect width='1928' height='4000' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+}
+.cards {
+  display: grid;
+  margin-left: 10%;
+}
+.about {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  position: absolute;
+  top: 90px;
+}
+a{
+  text-decoration: none;
+}
+.about_content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.about_content div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.about_content div p {
+}
+.about_contacts ul{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.about_contacts ul li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  
+}
+.about_contacts ul li a {
+  text-decoration: none;
+  color: #ffff;
+  transition: all linear 400ms;
+  margin-left: 5px;
+}
+.about_contacts ul li img {
+  width: 25px;
+}
+.about_contacts ul li a:hover {
+  text-decoration: underline;
+  color: rgb(195, 220, 255);
+  text-shadow: 0px 0px 10px #000;
+}
+
+.about_footer {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  border-top: 0.5px dashed #fff;
+}
+.about_footer h3 {
+}
+.postPage{
+  color: white;
+  position: absolute;
+  top: 50px;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  
+  gap: 20px;
+}
+.postTitle{
+  font-size: 20px;
+}
+.postContent{
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.postImage{
+  width: 700px;
+}
+.postContent ul{
+  list-style:lower-greek;
+  margin-left: 20px;
+}
+
+.sorting{
+  display: flex;
+  list-style-type: none;
+  gap: 10px;
+  margin-top: 2%;
+}
+.sorting li button{
+  border: none;
+  width: 50px;
+  height: 20px;
+  background:none;
+  color: white;
+  cursor: pointer;
+}

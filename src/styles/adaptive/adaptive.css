@@ -1,0 +1,168 @@
+@media (max-width: 768px) and (min-width: 425px) {
+    .MainRoute{
+        display: flex;
+        flex-direction: column;
+    }
+    header{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+    }
+    header nav ul {
+        top: 0;
+        left: 0;
+        align-items: center;
+        height: 50px;
+        width: 100%;
+        justify-content: center;
+
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .blog_post{
+        width: 330px;
+        margin-top: 50px;
+    }
+    .blog_post_image{
+        height: 100px;
+    }
+    .miniAbout{
+        display: none;
+    }
+    .about{
+        left: 0;
+    }
+    .about_content{
+        margin-left: 0px;
+    }
+    .cards{
+        position: absolute;
+        left: 0;
+        top: 90px;
+        display: block;
+    }
+
+
+    .postPage{
+        color: white;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        display: flex;
+        width: 100% border-box;
+        flex-direction: column;
+        
+      }
+      .postTitle{
+        width: 400px;
+        font-size: 15px;
+      }
+      .postContent{
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+      }
+
+      .postContent ul{
+        list-style:lower-greek;
+        margin-left: 20px;
+      }
+      .postContent img{
+        width: 350px;
+      }
+      .postContent p{
+        width: 350px;
+      }
+      .sorting{
+        position: absolute;
+        top: 60px;
+        left: 0;
+      }
+
+}
+@media (max-width: 420px) and (min-width: 320px) {
+    .MainRoute{
+        display: flex;
+        flex-direction: column;
+    }
+    header{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+    }
+    header nav ul {
+        top: 0;
+        left: 0;
+        align-items: center;
+        height: 50px;
+        width: 100%;
+        justify-content: center;
+
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .blog_post{
+        width: 100%;
+        margin-top: 40px;
+    }
+    .blog_post_image{
+        height: 100px;
+    }
+    .miniAbout{
+        display: none;
+    }
+    .about{
+        
+        left: 0%;
+    }
+    .about_content{
+        margin-left: 0px;
+    }
+    .cards{
+        position: absolute;
+        left: 0;
+        top: 90px;
+        display: block;
+    }
+
+
+    .postPage{
+        color: white;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        display: flex;
+        width: 100% border-box;
+        flex-direction: column;
+        
+      }
+      .postTitle{
+        width: 400px;
+        font-size: 15px;
+      }
+      .postContent{
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+      }
+
+      .postContent ul{
+        list-style:lower-greek;
+        margin-left: 20px;
+      }
+      .postContent img{
+        width: 350px;
+      }
+      .postContent p{
+        width: 350px;
+      }
+      .sorting{
+        position: absolute;
+        top: 60px;
+        left: 0;
+      }
+}

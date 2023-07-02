@@ -1,0 +1,31 @@
+header{
+    width: 200px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+header nav ul{
+    position: absolute;
+    top: 150px;
+    left: 100px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 24px;
+}
+.miniAbout{
+
+}
+.miniAbout img{
+    width: 120px;
+    border-radius: 100%;
+
+}
+
+header nav ul li a{
+    color: #ffff;
+    text-decoration: none;
+    font-size: 24px;
+}
